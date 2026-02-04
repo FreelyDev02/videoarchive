@@ -24,7 +24,22 @@ header { background: #fff; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05
 .mode-btn.active { background: var(--primary); color: white; }
 
 .search-wrapper input {
-    width: 100%; max-width: 500px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;
+width: 100%; 
+max-width: 500px; 
+box-sizing: border-box;
+padding: 12px; 
+border: 1px solid #ddd; 
+border-radius: 25px;
+font-size: 16px;
+outline: none;
+display: block;
+margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+.search-wrapper {
+padding: 0 15px;
+}
 }
 
 /* Секции */
