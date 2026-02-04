@@ -1,0 +1,143 @@
+:root {
+    --main-blue: #0077b6;
+    --accent-red: #ff4757;
+    --bg: #f4f7f9;
+    --text: #2d3436;
+    --gray: #636e72;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #005f73, #0a9396);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-container h1 span { color: #94d2bd; }
+
+.search-wrapper { margin-top: 20px; }
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Навигация */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: auto; /* Скролл для мобильных */
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #dfe6e9;
+    background: white;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background: var(--main-blue);
+    color: white;
+    border-color: var(--main-blue);
+}
+
+/* Сетка видео */
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Карточка */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.card.hidden { display: none; }
+
+.video-box {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    background: #000;
+}
+
+.video-box iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.card-content { padding: 20px; flex-grow: 1; }
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Теги */
+.tag {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.tag-cardio { background: #e3f2fd; color: #1976d2; }
+.tag-surgery { background: #fff3e0; color: #e65100; }
+.tag-neuro { background: #f3e5f5; color: #7b1fa2; }
+
+/* Кнопка сердечка */
+.fav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #dfe6e9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fav-btn.active { color: var(--accent-red); }
+
+h3 { margin: 0 0 10px 0; font-size: 18px; }
+.desc { color: var(--gray); font-size: 14px; margin: 0; }
+
+/* Адаптация под мобильные */
+@media (max-width: 600px) {
+    .video-grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 24px; }
+}

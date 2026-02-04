@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedArchive — Медицинская видеотека</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>MedArchive <span>+</span></h1>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Поиск по названию лекции или описанию...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="filters">
+        <button class="filter-btn active" data-filter="all">Все видео</button>
+        <button class="filter-btn" data-filter="favs">❤ Избранное</button>
+        <button class="filter-btn" data-filter="cardio">Кардиология</button>
+        <button class="filter-btn" data-filter="surgery">Хирургия</button>
+        <button class="filter-btn" data-filter="neuro">Неврология</button>
+    </nav>
+
+    <main class="container">
+        <div class="video-grid" id="videoGrid">
+           
+            <div class="card" data-category="cardio" data-id="v1">
+                <div class="video-box">
+                    <iframe src="https://kinescope.io/9C37UFTgsR2y7eiNC5YzhW" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <div class="card-top">
+                        <span class="tag tag-cardio">Кардиология</span>
+                        <button class="fav-btn" title="В избранное">❤</button>
+                    </div>
+                    <h3>Интубация на догоспитальном этапе</h3>
+                    <p class="desc">Первое видео.</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="surgery" data-id="v2">
+                <div class="video-box">
+                    <iframe src="https://kinescope.io/embed/203492340" allow="autoplay; fullscreen; picture-in-picture; encrypted-media;" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <div class="card-top">
+                        <span class="tag tag-surgery">Хирургия</span>
+                        <button class="fav-btn">❤</button>
+                    </div>
+                    <h3>Методы наложения швов</h3>
+                    <p class="desc">Техника базовых хирургических узлов и швов. Демонстрация на тренажере.</p>
+                </div>
+            </div>
+
+            <div class="card" data-category="neuro" data-id="v3">
+                <div class="video-box">
+                    <iframe src="https://www.youtube.com/embed/XSzsI5aGcK4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <div class="card-top">
+                        <span class="tag tag-neuro">Неврология</span>
+                        <button class="fav-btn">❤</button>
+                    </div>
+                    <h3>Синаптическая передача</h3>
+                    <p class="desc">Как работают нейроны и передаются сигналы в головном мозге человека.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
