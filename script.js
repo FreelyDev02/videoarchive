@@ -174,17 +174,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- АНАЛИТИКА (ЗАГОТОВКА) ---
-    let timeSpent = 0;
-    // Считаем время каждую секунду, если пользователь активен
-    setInterval(() => {
-        if (document.visibilityState === 'visible') {
-            timeSpent++;
-            // Каждые 10 секунд выводим в консоль (или отправляем на сервер)
-            if (timeSpent % 10 === 0) {
-                console.log(`Пользователь на сайте: ${timeSpent} секунд.`);
-                // Здесь будет код отправки: sendToServer(userId, timeSpent);
-            }
-        }
-    }, 1000);
 });
