@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedPortal — Обучение</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .load-more-container { text-align: center; margin: 30px 0; }
+        .load-more-btn {
+            padding: 12px 30px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            display: none; /* Скрыта по умолчанию */
+        }
+        .load-more-btn:hover { background: #005f92; }
+    </style>
 </head>
 <body>
 
     <header>
         <div class="header-container">
             <h1>MedPortal <span>RU</span></h1>
-           
             <div class="mode-switcher">
                 <button class="mode-btn active" id="btn-library">Видеоархив</button>
                 <button class="mode-btn" id="btn-courses">Курсы</button>
             </div>
-
             <div class="search-wrapper">
                 <input type="text" id="searchInput" placeholder="Поиск по лекциям...">
             </div>
@@ -30,238 +42,14 @@
             <button class="filter-btn" data-tag="cardio">Кардиология</button>
             <button class="filter-btn" data-tag="surgery">Хирургия</button>
             <button class="filter-btn" data-tag="neuro">Неврология</button>
-            <button class="filter-btn" data-tag="firstaid">Первая помощь</button>
+            <button class="filter-btn" data-tag="politravma_expert">Политравма</button>
         </nav>
 
         <main class="container">
-            <div class="video-grid">
-               
-                <div class="card" data-tags="politravma_expert" data-id="v1">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/56W74U8GJSHD8wW19qE757" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Техника работы жгутом-турникетом</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Модуль 1. Основы работы с пострадавшими с политравмой.</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v2">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/6mcAWxrErU4bHjrjt2Z3JK" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Техника работы жгутом Эсмарха</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Модуль 1. Основы работы с пострадавшими с политравмой.</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v3">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/fbBNp39g57FPamnaHPFwKv" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Протокол травмоосмотра</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Модуль 1. Основы работы с пострадавшими с политравмой.</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v4">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/edZY8R1LdsPV2wgzPjeo5F" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Интубация на догоспитальном этапе</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Модуль 1. Основы работы с пострадавшими с политравмой.</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v5">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/rrCENkV1iNQLabiZmWYsFn" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Алгоритм действий при ДТП</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Модуль 1. Основы работы с пострадавшими с политравмой.</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v6">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/puyAyCp5cMCkNyVbcYWuSm" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Установка орофарингеального воздуховода</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Модуль 1. Основы работы с пострадавшими с политравмой.</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v7">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/mp66xvrTUATsM7g57eLR8S" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Фиксация шейного отдела позвоночника</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v8">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/xbiU155Ec9LmsJoovz5sdT" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Фиксация пострадавшего на вакуумном матраце</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v9">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/ggFJSK6y5RJzEb7oNdnnzG" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Фиксация на спинальном щите</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v10">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/okWMN6mNNcqQ45rEpkSMMS" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Техника укладывания пострадавшего на спинальный щит</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v11">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/wHtNLkegJ8PnVsMFe4v4NY" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Работа ковшовыми носилками</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v12">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/baMmdeEhaRisZmp2jfUpDA" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Приёмы работы спинальным щитом</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-		<div class="card" data-tags="politravma_expert" data-id="v13">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/xAWFJiWV45a2TmHiNdYPpU" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Вакуумный матрац (подготовка к работе)</h3>
-                        <p class="desc">Политравма: экспертный лекторий.<br>Урок 4</p>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-                <div class="card" data-tags="surgery practice" data-id="v299">
-                    <div class="video-box">
-                        <iframe src="https://kinescope.io/embed/203492340" allow="autoplay; fullscreen;" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <div class="tags-list">
-                                <span class="tag">Хирургия</span>
-                            </div>
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Наложение швов</h3>
-                        <p class="desc">Практическое занятие на тренажере.</p>
-                    </div>
-                </div>
-
-                <div class="card" data-tags="neuro theory" data-id="v399">
-                    <div class="video-box">
-                        <iframe src="https://www.youtube.com/embed/XSzsI5aGcK4" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <div class="tags-list">
-                                <span class="tag">Неврология</span>
-                            </div>
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Нейроны и синапсы</h3>
-                        <p class="desc">Теоретический разбор работы мозга.</p>
-                    </div>
-                </div>
-
-                 <div class="card" data-tags="cardio firstaid politravma_expert" data-id="v499">
-                    <div class="video-box">
-                        <iframe src="https://www.youtube.com/embed/tDWO_u9k1hE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-top">
-                            <div class="tags-list">
-                                <span class="tag">СЛР</span>
-                                <span class="tag">Кардиология</span>
-                            </div>
-                            <button class="fav-btn">❤</button>
-                        </div>
-                        <h3>Реанимация (СЛР)</h3>
-                        <p class="desc">Техника непрямого массажа сердца.</p>
-                    </div>
-                </div>
-
+            <div class="video-grid" id="videoGrid"></div>
+           
+            <div class="load-more-container">
+                <button id="loadMoreBtn" class="load-more-btn">Показать еще видео</button>
             </div>
         </main>
     </section>
@@ -270,30 +58,15 @@
         <main class="container">
             <h2>Доступные программы обучения</h2>
             <div class="courses-grid">
-               
                 <div class="course-card" data-course-filter="politravma_expert">
-                    <div class="course-cover" style="background-color: #0077b6;">
-                        <span>Базовый</span>
-                    </div>
+                    <div class="course-cover" style="background-color: #0077b6;"><span>Базовый</span></div>
                     <div class="course-info">
                         <h3>Политравма экспертный лекторий</h3>
-                        <p>Политравма экспертный лекторий</p>
+                        <p>Полный курс лекций.</p>
                         <button class="start-course-btn">Открыть курс</button>
                     </div>
                 </div>
-
-                <div class="course-card" data-course-filter="surgery">
-                    <div class="course-cover" style="background-color: #e056fd;">
-                        <span>Pro</span>
-                    </div>
-                    <div class="course-info">
-                        <h3>Хирургия для начинающих</h3>
-                        <p>Все видеоматериалы по хирургическим техникам.</p>
-                        <button class="start-course-btn">Открыть курс</button>
-                    </div>
                 </div>
-
-            </div>
         </main>
     </section>
 

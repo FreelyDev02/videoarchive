@@ -1,0 +1,31 @@
+[
+  {
+    "id": "v1",
+    "title": "Техника работы жгутом-турникетом",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert", "surgery"],
+    "iframeUrl": "https://kinescope.io/56W74U8GJSHD8wW19qE757"
+  },
+  {
+    "id": "v2",
+    "title": "Техника работы жгутом Эсмарха",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert"],
+    "iframeUrl": "https://kinescope.io/6mcAWxrErU4bHjrjt2Z3JK"
+  },
+  {
+    "id": "v3",
+    "title": "Протокол травмоосмотра",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert"],
+    "iframeUrl": "https://kinescope.io/fbBNp39g57FPamnaHPFwKv"
+  },
+  {
+    "id": "v299",
+    "title": "Наложение швов",
+    "desc": "Практическое занятие на тренажере.",
+    "tags": ["surgery", "practice"],
+    "iframeUrl": "https://kinescope.io/embed/203492340"
+  }
+
+]
