@@ -21,11 +21,32 @@
     "iframeUrl": "https://kinescope.io/fbBNp39g57FPamnaHPFwKv"
   },
   {
-    "id": "v299",
-    "title": "Наложение швов",
-    "desc": "Практическое занятие на тренажере.",
-    "tags": ["surgery", "practice"],
-    "iframeUrl": "https://kinescope.io/embed/203492340"
+    "id": "v4",
+    "title": "Протокол травмоосмотра",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert"],
+    "iframeUrl": "https://kinescope.io/fbBNp39g57FPamnaHPFwKv"
+  },
+  {
+    "id": "v5",
+    "title": "Протокол травмоосмотра",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert"],
+    "iframeUrl": "https://kinescope.io/fbBNp39g57FPamnaHPFwKv"
+  },
+  {
+    "id": "v6",
+    "title": "Протокол травмоосмотра",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert"],
+    "iframeUrl": "https://kinescope.io/fbBNp39g57FPamnaHPFwKv"
+  },
+  {
+    "id": "v7",
+    "title": "Протокол травмоосмотра",
+    "desc": "Политравма: экспертный лекторий. Модуль 1.",
+    "tags": ["politravma_expert"],
+    "iframeUrl": "https://kinescope.io/fbBNp39g57FPamnaHPFwKv"
   }
 
 ]
